@@ -35,7 +35,9 @@
 
 #define JUCE_CORE_INCLUDE_NATIVE_HEADERS 1
 #define JUCE_CORE_INCLUDE_OBJC_HELPERS 1
+#if ! JUCE_AUDIOPROCESSOR_NO_GUI
 #define JUCE_GUI_BASICS_INCLUDE_XHEADERS 1
+#endif
 
 #include <juce_audio_plugin_client/juce_audio_plugin_client.h>
 #include <juce_audio_plugin_client/detail/juce_CheckSettingMacros.h>
